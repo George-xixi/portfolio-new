@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Dongle');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+* {
+  font-family: questrial, dongle, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Colour1: #020b66;
+  --Colour2: #1221ba;
+  --Colour3: #364dcd;
+
+}
+
+body {
+  margin: 0;
+  font-weight: 300;
+}
+
+
+
+.top-bar {
+width: 90%;
+margin: 0 auto;
+border-bottom: 5px solid var(--Colour2);
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  color: var(--Colour2);
+  font-size: 2.5rem;
+}
+
+nav {
+  grid-column-start: 3;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+nav  a{
+  color: var(--Colour2);
+  text-decoration: none;
+}
