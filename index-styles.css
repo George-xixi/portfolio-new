@@ -30,7 +30,7 @@ grid-template-columns: 1fr 1fr 1fr;
 
 h1 {
   padding-left: 2rem;
-  padding-top: 0.5rem;
+  padding-top: 0.75rem;
   color: var(--Colour2);
   font-size: 2.5rem;
 }
@@ -40,6 +40,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding-right: 1rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
 }
 
 nav ul {
@@ -53,4 +55,13 @@ nav li {
 nav  a{
   color: var(--Colour2);
   text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:hover {
+  border: 3px solid transparent;
+  border-radius: 100vmax;
+  background-color: var(--Colour1);
+  color: white;
+
 }
