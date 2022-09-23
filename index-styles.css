@@ -15,7 +15,6 @@
 
 body {
   margin: 0;
-  font-weight: 300;
 }
 
 
@@ -25,14 +24,15 @@ width: 90%;
 margin: 0 auto;
 border-bottom: 5px solid var(--Colour2);
 display:grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 2fr;
 }
 
 h1 {
   padding-left: 2rem;
-  padding-top: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   color: var(--Colour2);
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 nav {
@@ -42,6 +42,7 @@ nav {
   padding-right: 1rem;
   padding-bottom: 0.75rem;
   padding-top: 0.5rem;
+  font-size: 3.5rem;
 }
 
 nav ul {
@@ -64,4 +65,30 @@ nav a:hover {
   background-color: var(--Colour1);
   color: white;
 
+}
+
+main {
+  margin-top: 15rem;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1;
+  
+}
+
+main h2 {
+  font-size: 15rem;
+  background-image: url(/images/stary-background.avif) ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main h3 {
+  font-size: 6rem;
+  text-align: center;
+  background-image: url(/images/stary-background.avif) ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
