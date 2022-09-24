@@ -30,6 +30,7 @@ grid-template-columns: 1fr 2fr;
 position: fixed;
 top: 0;
 background-color: rgba(255, 255, 255, 0.462);
+z-index:100;
 }
 
 h1 {
@@ -189,4 +190,37 @@ filter:blur(1.5rem)
 
 .img-container:hover figcaption {
   visibility: visible;
+}
+
+.media-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 37%;
+  gap: 2rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+
+}
+
+.media-element {
+  padding: 1rem;
+  background-image: url(/images/stary-background.avif);
+  border-radius: 1.6rem;
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 1rem;
+  max-inline-size: 500px;
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.media-element figcaption {
+  text-align: center;
+  color: white;
+  font-size:2rem;
 }
