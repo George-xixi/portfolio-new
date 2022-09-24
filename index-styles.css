@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Dongle');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
-* {
-  font-family: questrial, dongle, Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Dongle:wght@300;400;700&display=swap');
+
+ *{
+  font-family: 'questrial', Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -207,31 +208,28 @@ filter:blur(1.5rem)
 
 .media-element {
   padding-top: 1.5rem;
-  background-color: #020a6641;
+  background-color: #020a6679;
   border-radius: 1.6rem;
   display: grid;
-  grid-template-rows: min-content;
-  gap: 0.75rem;
-  max-inline-size: 350px;
+  gap: 0rem;
+  max-inline-size: 300px;
   justify-content: center;
   scroll-snap-align: center;
 }
 
 
 .media-element > img {
-  inline-size: 90%;
+  inline-size: 100%;
   aspect-ratio: 1/1 ;
   object-fit: cover;
-  border: 5px solid rgba(255, 255, 255, 0.286);
-  border-radius: 1rem;
   padding: 0.5rem;
+  justify-self: center;
 }
 
 .media-element figcaption {
+  font-family: 'Codystar';
   text-align: center;
   color: white;
-  font-size:2rem;
-  padding-bottom: 1rem;
+  font-size:3rem;
+  font-style: 'Codystar';
 }
-
-
