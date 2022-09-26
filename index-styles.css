@@ -171,9 +171,6 @@ main h3 {
 }
 
 .my-pics .img-container {
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
   font-size: 3rem;
   text-align: justify;
   max-width: 500px;
@@ -182,6 +179,10 @@ main h3 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-content: center;
+  padding-block: 1.5rem;
+  margin-inline: 3rem;
+  background-image: url(/images/stary-background.avif);
+  border-radius: 1.6rem;
 }
 
 .img-container img {
