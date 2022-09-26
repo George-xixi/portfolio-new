@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
-@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Dongle:wght@300;400;700&display=swap');
 
  *{
   font-family: 'questrial', Arial, Helvetica, sans-serif;
@@ -23,7 +22,7 @@ body {
 
 .top-bar {
 width: 90%;
-height: 8rem;
+height: 7rem;
 margin-top: 0%;
 margin-left: 5%;
 margin-right: 10%;
@@ -38,12 +37,12 @@ z-index:100;
 
 h1 {
   padding-left: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   color: var(--Colour2);
   font-size: 5rem;
+  word-break: keep-all;
 }
-
 nav {
   grid-column-start: 3;
   display: flex;
@@ -102,8 +101,8 @@ main h2 {
   text-align: center;
 }
 
-main h3 {
-  font-size: 6rem;
+h3 {
+  font-size: 8rem;
   text-align: center;
   background-image: url(/images/stary-background.avif) ;
   -webkit-background-clip: text;
@@ -118,6 +117,7 @@ main h3 {
   background-clip: text;
   color: transparent;
   margin-block: 5rem;
+  text-align: center;
 }
 
 .about-me {
@@ -169,7 +169,7 @@ main h3 {
   font-size: 8rem;
   padding-top: 2rem;
   padding-bottom: 10rem;
-  width: 100%
+  width: 100%;
 }
 
 .my-pics .img-container {
@@ -206,7 +206,7 @@ background-image: url(/images/stary-background.avif) ;
 }
 
 .img-container:hover img{
-filter:blur(1.5rem)
+filter:blur(1.5rem);
 }
 
 .img-container:hover figcaption {
@@ -214,11 +214,8 @@ filter:blur(1.5rem)
 }
 
 
-#music-subtitle {
-  font-size: 3rem;
-  margin-block-start: -3rem;
-}
 .media-scroller {
+  margin-block-start: 7rem;
   display: grid;
   inline-size: 100%;
   grid-auto-flow: column;
