@@ -127,16 +127,27 @@ main h3 {
   width: 100%
 }
 
-.about-me p {
-  padding-top: 10rem;
+.about-me div {
+  padding-top: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
   font-size:3rem;
   text-align: justify;
   max-width: 600px;
   padding-bottom: 2rem;
+  display: grid;
+  gap:  4rem;
+  justify-items: center;
 }
 
+.about-me div img {
+  inline-size: 15rem;
+  max-inline-size: 200px;
+}
+
+#smiley-img {
+inline-size: 12rem !important;
+}
 .my-pics{
   text-align: center;
   display: flex;
