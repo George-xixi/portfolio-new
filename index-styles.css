@@ -201,14 +201,12 @@ filter:blur(1.5rem)
   gap: 1rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  background-image: url(/images/stary-background.avif);
   scroll-snap-type: inline mandatory;
-
 }
 
 .media-element {
   padding-top: 1.5rem;
-  background-color: #020a6679;
+  background-image: url(/images/stary-background.avif);
   border-radius: 1.6rem;
   display: grid;
   gap: 0rem;
