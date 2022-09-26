@@ -9,7 +9,7 @@
 
 :root {
   --Colour1: #020b66;
-  --Colour2: #1221ba;
+  --Colour2: #1220ba;
   --Colour3: #364dcd;
 
 }
@@ -22,6 +22,7 @@ body {
 
 .top-bar {
 width: 90%;
+height: 8rem;
 margin-top: 0%;
 margin-left: 5%;
 margin-right: 10%;
@@ -60,22 +61,29 @@ nav li {
   display: inline-block;
   padding: 1rem;
 }
+
 nav  a{
   color: var(--Colour2);
   text-decoration: none;
   padding: 1rem;
 }
 
-nav a:hover {
-  border: 3px solid transparent;
-  border-radius: 100vmax;
-  background-image: url(/images/stary-background.avif);
-  color: white;
-
+nav a:after {
+  content: '';
+  width: 0px;
+  height: 5px;
+  display: block;
+  background-color: var(--Colour2);
+  transition: 300ms;
 }
 
+nav a:hover:after {
+  width: 110%;
+}
+
+
 main {
-  margin-top: 15rem;
+  margin-top: 25rem;
   display:flex;
   align-items: center;
   flex-direction: column;
@@ -117,6 +125,7 @@ main h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-block-start: 0;
 }
 
 
@@ -142,12 +151,9 @@ main h3 {
 
 .about-me div img {
   inline-size: 15rem;
-  max-inline-size: 200px;
+  max-inline-size: 400px;
 }
 
-#smiley-img {
-inline-size: 12rem !important;
-}
 .my-pics{
   text-align: center;
   display: flex;
@@ -169,7 +175,7 @@ inline-size: 12rem !important;
   padding-left: 2rem;
   font-size: 3rem;
   text-align: justify;
-  max-width: 400px;
+  max-width: 500px;
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -185,7 +191,7 @@ inline-size: 12rem !important;
 
 .img-container figcaption {
 position: absolute;
-max-width: 400px;
+max-width: 500px;
 text-align: center;
 margin-top: 8rem;
 visibility: hidden;
@@ -241,4 +247,82 @@ filter:blur(1.5rem)
   color: white;
   font-size:3rem;
   font-style: 'Codystar';
+}
+
+form { 
+  max-inline-size:  700px; 
+  margin-inline: auto;
+  margin-block: 3rem;
+}
+
+.feedback-input {
+  color: var(--Colour1);
+  font-size: 3rem;
+  border-radius: 5px;
+  line-height: 2rem;
+  background-color: transparent;
+  border:2px solid var(--Colour1);
+  transition: all 0.3s;
+  padding: 1.5rem;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.feedback-input:focus { 
+  border:6px solid var(--Colour2); 
+}
+
+textarea {
+  height: 10rem;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: var(--Colour1);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top:-0.5rem;
+}
+
+[type="submit"]:hover { 
+  background: var(--Colour3); 
+}
+
+footer {
+  background-color: var(--Colour1);
+  border-top: 5px solid var(--Colour3);
+  color:white;
+  display: grid;
+  justify-content: center;
+  gap: 5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  bottom: 0%;
+}
+
+footer h4 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+}
+
+.social-logos a {
+  margin-inline: 3rem;
+}
+
+.social-logos a img {
+  inline-size: 5rem;
+}
+
+.social-logos a img:hover {
+border-block-end: 50px solid var(--Colour1);
+transition: 500ms;
 }
