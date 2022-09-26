@@ -11,6 +11,7 @@
   --Colour1: #020b66;
   --Colour2: #1220ba;
   --Colour3: #364dcd;
+  --Colour4: white;
 
 }
 
@@ -210,12 +211,17 @@ filter:blur(1.5rem)
   visibility: visible;
 }
 
+
+#music-subtitle {
+  font-size: 3rem;
+  margin-block-start: -3rem;
+}
 .media-scroller {
   display: grid;
   inline-size: 100%;
   grid-auto-flow: column;
-  grid-auto-columns: 36%;
-  gap: 1rem;
+  grid-auto-columns: 19%;
+  gap: 0rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
@@ -223,6 +229,7 @@ filter:blur(1.5rem)
 
 .media-element {
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-image: url(/images/stary-background.avif);
   border-radius: 1.6rem;
   display: grid;
@@ -239,20 +246,19 @@ filter:blur(1.5rem)
   object-fit: cover;
   padding: 0.5rem;
   justify-self: center;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
-.media-element figcaption {
-  font-family: 'Codystar';
-  text-align: center;
-  color: white;
-  font-size:3rem;
-  font-style: 'Codystar';
-}
+
+
+
 
 form { 
   max-inline-size:  700px; 
   margin-inline: auto;
-  margin-block: 3rem;
+  margin-block-start: 5rem;
+  margin-block-end: 10rem;
 }
 
 .feedback-input {
@@ -297,7 +303,7 @@ textarea {
 }
 
 footer {
-  background-color: var(--Colour1);
+  background-image: url(/images/stary-background.avif);
   border-top: 5px solid var(--Colour3);
   color:white;
   display: grid;
@@ -323,6 +329,6 @@ footer h4 {
 }
 
 .social-logos a img:hover {
-border-block-end: 50px solid var(--Colour1);
+border-block-end: 50px solid transparent;
 transition: 500ms;
 }
