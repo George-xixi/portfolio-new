@@ -320,14 +320,17 @@ footer h4 {
 }
 
 .social-logos a {
-  margin-inline: 3rem;
+  padding-inline: 3rem;
 }
 
 .social-logos a img {
   inline-size: 5rem;
+  margin-block: 10px;
 }
 
 .social-logos a img:hover {
-border-block-end: 50px solid transparent;
-transition: 500ms;
+border-block: 10px solid white;
+transition: 200ms;
+margin-block:0px;
 }
+

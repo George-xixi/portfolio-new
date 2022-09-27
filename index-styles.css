@@ -213,11 +213,10 @@ filter:blur(1.5rem)
   visibility: visible;
 }
 
-
-#music-subtitle {
-  font-size: 3rem;
-  margin-block-start: -3rem;
+.music-h3 {
+  font-size: 8rem;
 }
+
 .media-scroller {
   display: grid;
   inline-size: 100%;
@@ -328,9 +327,13 @@ footer h4 {
 
 .social-logos a img {
   inline-size: 5rem;
+  margin-block: 10px;
 }
 
 .social-logos a img:hover {
-border-block-end: 50px solid transparent;
-transition: 500ms;
+border-block: 10px solid white;
+transition: 200ms;
+margin-block:0px;
 }
+
+
