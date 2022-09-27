@@ -123,7 +123,7 @@ h3 {
 .about-me {
   background-image: url(/images/stary-background.avif);
   color: white;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
