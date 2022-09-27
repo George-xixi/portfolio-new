@@ -231,6 +231,7 @@ filter:blur(1.5rem)
 .media-element {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-bottom:1rem;
   background-image: url(/images/stary-background.avif);
   border-radius: 1.6rem;
   display: grid;
@@ -336,4 +337,18 @@ transition: 200ms;
 margin-block:0px;
 }
 
+::-webkit-scrollbar {
+  inline-size: 1rem;
+  height:1rem;
+}
 
+::-webkit-scrollbar-track {
+  background-color: rgba(163, 161, 161, 0.489);
+  border-radius: 100vmax;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: url(/images/stary-background.avif);
+  border-radius: 100vmax;
+  height:0.2rem;
+}
