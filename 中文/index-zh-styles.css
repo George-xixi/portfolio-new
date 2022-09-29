@@ -22,7 +22,7 @@ body {
 
 .top-bar {
 width: 90%;
-height: 7rem;
+height: 6rem;
 margin-top: 0%;
 margin-left: 5%;
 margin-right: 10%;
@@ -40,7 +40,7 @@ h1 {
   padding-top: 0rem;
   padding-bottom: 0rem;
   color: var(--Colour2);
-  font-size: 5rem;
+  font-size: 4rem;
   word-break: keep-all;
 }
 nav {
@@ -83,27 +83,30 @@ nav a:hover:after {
 
 
 main {
-  margin-top: 25rem;
+  margin-top: 15rem;
   display:flex;
-  align-items: center;
   flex-direction: column;
   width: 100%;
-  gap: 7rem;
-  
+  gap: 5rem;
+}
+
+main .intro {
+padding-inline-start: 5rem;
 }
 
 main h2 {
-  font-size: 15rem;
+  font-size: 13rem;
   background-image: url(/images/stary-background.avif) ;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-align: center;
+  text-align: left;
 }
 
-h3 {
-  font-size: 8rem;
-  text-align: center;
+main h3 {
+  font-size: 6rem;
+  text-align: left;
+  margin-block-start: -3rem;
   background-image: url(/images/stary-background.avif) ;
   -webkit-background-clip: text;
   background-clip: text;
@@ -116,7 +119,6 @@ h3 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  margin-block: 5rem;
   text-align: center;
 }
 
@@ -136,6 +138,7 @@ h3 {
   color: white;
   font-size: 8rem;
   padding-top: 2rem;
+  text-align: center;
   width: 110%;
 }
 
@@ -143,9 +146,9 @@ h3 {
   padding-top: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
-  font-size:3rem;
+  font-size:2.5rem;
   text-align: justify;
-  max-width: 600px;
+  max-width: 500px;
   padding-bottom: 2rem;
   display: grid;
   gap:  4rem;
@@ -153,8 +156,8 @@ h3 {
 }
 
 .about-me div img {
-  inline-size: 15rem;
-  max-inline-size: 400px;
+  inline-size: 10rem;
+  max-inline-size: 300px;
 }
 
 .my-pics{
@@ -166,16 +169,17 @@ h3 {
 
 
 #my-pics-h3 {
-  font-size: 8rem;
+  font-size: 7rem;
   padding-top: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
+  text-align: center;
   width: 100%;
 }
 
 .my-pics .img-container {
   font-size: 3rem;
   text-align: justify;
-  max-width: 500px;
+  max-width: 400px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -194,9 +198,9 @@ h3 {
 
 .img-container figcaption {
 position: absolute;
-max-width: 500px;
+max-width: 400px;
 text-align: center;
-margin-top: 8rem;
+margin-top: 6rem;
 visibility: hidden;
 background-image: url(/images/stary-background.avif) ;
   -webkit-background-clip: text;
@@ -206,16 +210,19 @@ background-image: url(/images/stary-background.avif) ;
 }
 
 .img-container:hover img{
-filter:blur(1.5rem);
+filter:blur(1rem);
 }
 
 .img-container:hover figcaption {
   visibility: visible;
 }
 
+.music-h3 {
+  font-size: 7rem;
+  text-align: center;
+}
 
 .media-scroller {
-  margin-block-start: 7rem;
   display: grid;
   inline-size: 100%;
   grid-auto-flow: column;
@@ -227,13 +234,14 @@ filter:blur(1.5rem);
 }
 
 .media-element {
-  padding-block: 1.5rem;
-  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom:1rem;
   background-image: url(/images/stary-background.avif);
   border-radius: 1.6rem;
   display: grid;
   gap: 0rem;
-  max-inline-size: 300px;
+  max-inline-size: 250px;
   justify-content: center;
   scroll-snap-align: center;
 }
@@ -251,7 +259,9 @@ filter:blur(1.5rem);
 
 
 
-
+#form-h3 {
+  text-align: center;
+}
 
 form { 
   max-inline-size:  700px; 
@@ -309,7 +319,7 @@ footer {
   justify-content: center;
   gap: 5rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   bottom: 0%;
 }
 
@@ -324,7 +334,7 @@ footer h4 {
 }
 
 .social-logos a img {
-  inline-size: 5rem;
+  inline-size: 3rem;
   margin-block: 10px;
 }
 
