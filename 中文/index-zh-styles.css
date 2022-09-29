@@ -226,7 +226,7 @@ filter:blur(1rem);
   display: grid;
   inline-size: 100%;
   grid-auto-flow: column;
-  grid-auto-columns: 19%;
+  grid-auto-columns: 43%;
   gap: 0rem;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -357,4 +357,10 @@ margin-block:0px;
   background-image: url(/images/stary-background.avif);
   border-radius: 100vmax;
   height:0.2rem;
+}
+
+@media screen and (min-width: 980px) {
+  .media-scroller {
+    grid-auto-columns: 420px;
+  }
 }
