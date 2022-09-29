@@ -222,8 +222,8 @@ filter:blur(1.5rem)
   display: grid;
   inline-size: 100%;
   grid-auto-flow: column;
-  grid-auto-columns: 19%;
   gap: 0rem;
+  grid-auto-columns: 43%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
@@ -236,7 +236,7 @@ filter:blur(1.5rem)
   background-image: url(/images/stary-background.avif);
   border-radius: 1.6rem;
   display: grid;
-  max-inline-size: 250px;
+  max-inline-size: 300px;
   justify-content: center;
   scroll-snap-align: center;
 }
@@ -351,4 +351,10 @@ margin-block:0px;
   background-image: url(/images/stary-background.avif);
   border-radius: 100vmax;
   height:0.2rem;
+}
+
+@media screen and (min-width: 980px) {
+  .media-scroller {
+    grid-auto-columns: 420px;
+  }
 }
