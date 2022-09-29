@@ -236,7 +236,6 @@ filter:blur(1.5rem)
   background-image: url(/images/stary-background.avif);
   border-radius: 1.6rem;
   display: grid;
-  gap: 0rem;
   max-inline-size: 250px;
   justify-content: center;
   scroll-snap-align: center;
